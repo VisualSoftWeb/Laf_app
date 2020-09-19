@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">SplashActivity</string>
+    <string name="bairro">BAIRRO</string>
+
+    <string-array name="Fermentacao">
+        <item>FERMENTAÇÃO</item>
+        <item>Curta Fermentação 7h (Preto)</item>
+        <item>Alta Fermentação 8h-10h (Vermelho)</item>
+        <item>Longa Fermentação 10h-12h (Azul)</item>
+        <item>Doce  Fermentação 8h-10h (Amarelo)</item>
+    </string-array>
+
+    <string-array name="Produtos">
+        <item>PRODUTOS</item>
+        <item>PÃO FRANCÊS 40gr </item>
+        <item>PÃO FRANCÊS 50gr </item>
+        <item>PÃO FRANCÊS 60gr </item>
+        <item> PÃO SUÍÇO/ CARECA 50gr </item>
+        <item> SUIÇÃO 300 gr </item>
+        <item>BROA DE COCO GRANDE 300gr</item>
+        <item>BROA DE COCO PEQUENA 50gr</item>
+        <item>BROA DE FUBÁ E ERVA DOCE 300gr</item>
+        <item>BROA DE FUBÁ E ERVA DOCE 50gr</item>
+        <item>PÃO CACHORRO QUENTE 65gr</item>
+        <item>PÃO DE HAMBÚRGUER 65gr</item>
+        <item>SACADURA</item>
+        <item>BAGUETE 100gr</item>
+        <item>BAGUETE 120gr</item>
+        <item>DOGUINHO 40 gr</item>
+        <item>PÃO DOCE CARACOL 50gr </item>
+        <item>PÃO DOCE NOZINHO 50gr </item>
+        <item>ROSCA DOCE </item>
+        <item> SONHO 50 gr </item>
+        <item>PÃO DOCE FLOR 150 gr </item>
+        <item>PÃO DOCE FLOR 300 gr </item>
+        <item>TRANÇA 150 gr </item>
+        <item>TRANÇA 300 gr </item>
+        <item>RABANADA </item>
+
+    </string-array>
+
+    <string-array name="Cidades_RJ">
+        <item>Angra dos Reis</item>
+        <item>Aperibé</item>
+        <item>Araruama</item>
+        <item>Areal</item>
+        <item>Armação dos Búzios</item>
+        <item>Arraial do Cabo</item>
+        <item>Barra do Piraí</item>
+        <item>Barra Mansa</item>
+        <item>Belford Roxo</item>
+        <item>Bom Jesus do Itabapoana</item>
+        <item>Cabo Frio</item>
+        <item>Cachoeiras de Macacu</item>
+        <item>Cambuci </item>
+        <item>Campos dos Goytacazes </item>
+        <item>Carapebus</item>
+        <item>Cardoso Moreira</item>
+        <item>Carmo</item>
+        <item>Casimiro de Abreu </item>
+        <item>Comendador Levy Gasparian </item>
+        <item>Conceição de Macabu </item>
+        <item>Cordeiro</item>
+        <item>Duas Barras</item>
+        <item>Duque de Caxias </item>
+        <item>Engenheiro Paulo de Frontin </item>
+        <item>Guapimirim</item>
+        <item>Iguaba Grande</item>
+        <item>Itaboraí</item>
+        <item>Itaguaí</item>
+        <item>Italva</item>
+        <item>Itaocara </item>
+        <item>Itaperuna </item>
+        <item>Itatiaia</item>
+        <item>Japeri </item>
+        <item>Laje do Muriaé</item>
+        <item>Macaé </item>
+        <item>Macuco</item>
+        <item>Magé </item>
+        <item>Mangaratiba</item>
+        <item>Maricá  </item>
+        <item>Mendes</item>
+        <item>Mesquita</item>
+        <item>Miguel Pereira </item>
+        <item>Miracema</item>
+        <item>Natividade</item>
+        <item>Nilópolis</item>
+        <item>Niterói</item>
+        <item>Nova Friburgo</item>
+        <item>Nova Iguaçu</item>
+        <item>Paracambi</item>
+        <item>Paraíba do Sul</item>
+        <item>Paraty</item>
+        <item>Paty do Alferes</item>
+        <item>Petrópolis</item>
+        <item>Pinheiral</item>
+        <item>Piraí</item>
+        <item>Porciúncula</item>
+        <item>Porto Real</item>
+        <item>Quatis</item>
+        <item>Queimados</item>
+        <item>Quissamã</item>
+        <item>Quintino</item>
+        <item>Resende</item>
+        <item>Rio Bonito</item>
+        <item>Rio Claro</item>
+        <item>Rio das Flores</item>
+        <item>Rio das Ostras</item>
+        <item>Rio de Janeiro (capital)</item>
+        <item>Santa Maria Madalena</item>
+        <item>Santo Antônio de Pádua</item>
+        <item>São Fidélis</item>
+        <item>São Francisco de Itabapoana  </item>
+        <item>São Gonçalo </item>
+        <item>São João da Barra </item>
+        <item>São João de Meriti </item>
+        <item>São José de Ubá </item>
+        <item>São José do Vale do Rio Preto </item>
+        <item>São Pedro da Aldeia </item>
+        <item>São Sebastião do Alto </item>
+        <item>Sapucaia </item>
+        <item>Saquarema </item>
+        <item>Seropédica </item>
+        <item>Silva Jardim </item>
+        <item>Sumidouro </item>
+        <item>Tanguá </item>
+        <item>Teresópolis </item>
+        <item>Trajano de Moraes </item>
+        <item>Três Rios </item>
+        <item>Valença </item>
+        <item>Varre-Sai </item>
+        <item>Vassouras </item>
+        <item>Volta Redonda </item>
+    </string-array>
+
+
+</resources>

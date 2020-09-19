@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextCidade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lafpan.laf_app.com.Activity.ConfiguracaoUsuarioActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context="lafpan.laf_app.com.Activity.ConfiguracoesAdminActivity">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+      <EditText
+          android:id="@+id/editNomeCompleto"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bg_edit_text"
+          android:ems="10"
+          android:hint="Nome Completo"
+          android:inputType="text"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editCpfCnpj"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+          android:background="@drawable/bg_edit_text"
+
+          android:ems="10"
+          android:hint="CPF/CNPJ"
+          android:inputType="numberDecimal"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editCidade"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+
+          android:background="@drawable/bg_edit_text"
+          android:ems="10"
+          android:hint="Cidade"
+          android:inputType="text"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editBairro"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+          android:background="@drawable/bg_edit_text"
+
+          android:ems="10"
+          android:hint="Bairro"
+          android:inputType="text"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editRua"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+
+          android:background="@drawable/bg_edit_text"
+          android:ems="10"
+          android:hint="Rua"
+          android:inputType="text"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editN"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+
+          android:background="@drawable/bg_edit_text"
+          android:ems="10"
+          android:hint="N° do Estabelecimento"
+          android:inputType="numberDecimal"
+          android:padding="16dp" />
+
+      <EditText
+          android:id="@+id/editContatoTelefonico"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-2dp"
+
+          android:background="@drawable/bg_edit_text"
+          android:ems="10"
+          android:hint="Contato Telefônico"
+          android:inputType="phone"
+          android:padding="16dp" />
+
+      <Button
+          android:id="@+id/buttonAcesso2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="validarDadosUsuario"
+          android:padding="16dp"
+          android:text="Salvar"
+          android:theme="@style/botaoPadrao" />
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <include
+      layout="@layout/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+
+</LinearLayout>

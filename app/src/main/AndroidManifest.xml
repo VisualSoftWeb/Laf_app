@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lafpan.laf_app.com.splashactivity"
+    tools:ignore="ExtraText">
+    <!-- para habilitar a mascara TELEFONE E CPF : xmlns:tools="http://schemas.android.com/tools" -->
+
+
+    <!-- Permissões de internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissões galeria / camera -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="Lafpan"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label"> <!-- para habilitar a mascara -->
+
+        <activity android:name="lafpan.laf_app.com.Activity.PedidosActivity"
+            android:parentActivityName="lafpan.laf_app.com.Activity.AdminActivity"></activity>
+
+        <activity
+            android:name="lafpan.laf_app.com.Activity.ProdutosActivity2"
+            android:parentActivityName="lafpan.laf_app.com.Activity.HomeActivity" />
+        <activity
+            android:name="lafpan.laf_app.com.Activity.ConfiguracaoUsuarioActivity"
+            android:parentActivityName="lafpan.laf_app.com.Activity.HomeActivity" />
+        <activity
+            android:name="lafpan.laf_app.com.Activity.ConfiguracoesAdminActivity"
+            android:parentActivityName="lafpan.laf_app.com.Activity.AdminActivity" />
+
+        <activity android:name="lafpan.laf_app.com.Activity.AdminActivity" />
+        <activity android:name="lafpan.laf_app.com.Activity.HomeActivity" />
+        <activity android:name="lafpan.laf_app.com.Activity.AutenticacaoActivity" />
+        <activity android:name="lafpan.laf_app.com.Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lafpan.laf_app.com.Activity.NovoProdutoEmpresaActivity"
+            android:parentActivityName="lafpan.laf_app.com.Activity.AdminActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

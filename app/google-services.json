@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "269121378320",
+    "firebase_url": "https://laf-app-d9029.firebaseio.com",
+    "project_id": "laf-app-d9029",
+    "storage_bucket": "laf-app-d9029.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269121378320:android:fbb26e55a669c69a351295",
+        "android_client_info": {
+          "package_name": "lafpan.laf_app.com.splashactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269121378320-r9a6dufgq0rgonti8ck8lsmjfjpaccd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lafpan.laf_app.com.splashactivity",
+            "certificate_hash": "da8152fc2ccaed5a60f1d894ca54bfcbf054d5c2"
+          }
+        },
+        {
+          "client_id": "269121378320-r02u57cdoohnkghqo961d2reoqbo1vok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRBBLDLrgRKXedqAuan3OMGEbElpoyjTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269121378320-r02u57cdoohnkghqo961d2reoqbo1vok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

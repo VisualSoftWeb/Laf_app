@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textPedidoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="NOME"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textPedidoCpfCnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPF/CNPJ"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cidade"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bairro"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoRua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="RUA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="NUMERO ESTABELECIMENTO"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TELEFONE"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoPeriodoEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="PERIODO ENTREGA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoObs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="OBSERVAÇÃO"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPedidoItens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRODUTO"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/divisor" />
+
+</LinearLayout>
