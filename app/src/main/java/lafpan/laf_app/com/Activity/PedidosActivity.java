@@ -34,7 +34,7 @@ public class PedidosActivity extends AppCompatActivity {
     private AlertDialog dialog;
     private DatabaseReference firebaseRef;
     private String idEmpresa;
-    private String idUsuario;
+
 
 
     @Override
@@ -48,7 +48,6 @@ public class PedidosActivity extends AppCompatActivity {
 
         firebaseRef = ConfiguracaoFirebase.getFirebase();
         idEmpresa = UsuarioFirebase.getIdUsuario();
-        idUsuario = UsuarioFirebase.getIdUsuario();
 
             //Configuração da Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
