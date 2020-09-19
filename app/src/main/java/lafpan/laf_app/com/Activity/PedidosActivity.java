@@ -49,6 +49,7 @@ public class PedidosActivity extends AppCompatActivity {
         firebaseRef = ConfiguracaoFirebase.getFirebase();
         idEmpresa = UsuarioFirebase.getIdUsuario();
 
+
             //Configuração da Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Pedidos");
