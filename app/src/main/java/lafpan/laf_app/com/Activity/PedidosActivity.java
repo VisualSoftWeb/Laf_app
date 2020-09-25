@@ -98,7 +98,7 @@ public class PedidosActivity extends AppCompatActivity {
 
                     for (DataSnapshot ds: dataSnapshot.getChildren()){
 
-                        //Vamos tentar com um outro for
+
                         for(DataSnapshot ds2 : ds.getChildren()){
                             Pedido pedido = ds2.getValue(Pedido.class);
                             pedidos.add(pedido);

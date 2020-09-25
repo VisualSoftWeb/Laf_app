@@ -55,7 +55,7 @@ public class AdapterPedido extends RecyclerView.Adapter<AdapterPedido.MyViewHold
             int qtde = itemPedido.getQuantidade();
 
             String nome = itemPedido.getNomeProduto();
-            descricaoItens += numeroItem + " - " + nome + " / (" + qtde + ") \n";
+            descricaoItens += numeroItem + " - " + nome + " Qtd:" + qtde + " \n";
             numeroItem++;
         }
 
