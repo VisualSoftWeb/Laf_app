@@ -62,7 +62,7 @@ public class AdapterPedido extends RecyclerView.Adapter<AdapterPedido.MyViewHold
         holder.itens.setText(descricaoItens);
 
         int periodoEntrega = pedido.getPeriodoEntrega();
-        String periodo = periodoEntrega == 0 ? "Dinheiro" : "Máquina cartão" ;
+        String periodo = periodoEntrega == 0 ? "Manhã" : "Tarde" ;
         holder.periodoEntrega.setText( "Periodo: " + periodo );
 
     }

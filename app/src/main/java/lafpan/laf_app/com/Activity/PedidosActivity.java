@@ -74,18 +74,20 @@ public class PedidosActivity extends AppCompatActivity {
                 .build();
         dialog.show();
 
+        Log.i("idEmpresa ========> ", idEmpresa);
+
         DatabaseReference pedidoRef = firebaseRef
 
                 .child("pedidos_confirmados")
                 .child(idEmpresa);
 
-        Query pedidoPesquisa = pedidoRef.orderByChild( "status")
+        //Query pedidoPesquisa = pedidoRef.orderByChild( "status")
+                //Seu firebase está "Confirmado" e você está tentando encontrar um valor "confirmado"
+                //.equalTo("Confirmado");
 
-                .equalTo("confirmado");
 
 
-
-        pedidoPesquisa.addValueEventListener(new ValueEventListener(){
+        pedidoRef.addValueEventListener(new ValueEventListener(){
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
@@ -96,11 +98,11 @@ public class PedidosActivity extends AppCompatActivity {
 
                     for (DataSnapshot ds: dataSnapshot.getChildren()){
 
-                        Log.i("FIREBASE ====>", "VALOR: " + ds.getValue());
-
-                        Pedido pedido = ds.getValue(Pedido.class);
-                        pedidos.add(pedido);
-
+                        //Vamos tentar com um outro for
+                        for(DataSnapshot ds2 : ds.getChildren()){
+                            Pedido pedido = ds2.getValue(Pedido.class);
+                            pedidos.add(pedido);
+                        }
                     }
 
                     adapterPedido.notifyDataSetChanged();

@@ -334,7 +334,7 @@ public class ProdutosActivity2 extends AppCompatActivity {
         builder.setTitle("Prazo para entrega 24 à 48 horas. " );
 
         CharSequence[] itens = new CharSequence[]{
-         "Manhã", "Tarde"
+         "Manhã", "Tarde" //aqui!!!
 
         };
         builder.setSingleChoiceItems(itens, 1, new DialogInterface.OnClickListener() {
