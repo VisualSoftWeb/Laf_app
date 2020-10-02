@@ -2,7 +2,9 @@ package model;
 
 import com.google.firebase.database.DatabaseReference;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 import Helper.ConfiguracaoFirebase;
 
@@ -66,20 +68,6 @@ public class Pedido {
 
     }
 
-    public void confirmar(){
-
-        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference pedidoRef = firebaseRef
-                .child("pedidos_confirmados")
-                .child(getIdEmpresa())
-                .child(getIdUsuario())
-                .child(getIdPedido());
-
-
-        pedidoRef.setValue(this);
-
-    }
-
     public void remover(){
 
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
@@ -89,6 +77,40 @@ public class Pedido {
                 .child(getIdUsuario());
 
         pedidoRef.removeValue();
+
+
+    }
+
+
+    public void confirmar(){
+
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos_confirmados")
+                .child(getIdEmpresa())
+                .child(getIdUsuario())
+                .child(getIdPedido());
+
+        pedidoRef.setValue(this);
+
+
+    }
+
+    public void atualizarStatus(){
+
+        HashMap<String, Object> status = new HashMap<>();
+        status.put("status",getStatus());
+
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos_finalizados")
+                .child(getIdEmpresa())
+                .child(getIdUsuario())
+                .child(getIdPedido());
+
+
+  pedidoRef.updateChildren(status);
+
 
 
     }

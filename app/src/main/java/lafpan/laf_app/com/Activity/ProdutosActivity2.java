@@ -64,6 +64,8 @@ public class ProdutosActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produtos);
 
+        //tela de pedidos
+
 
         //inicializar componentes
         inicializarComponentes();
@@ -334,7 +336,7 @@ public class ProdutosActivity2 extends AppCompatActivity {
         builder.setTitle("Prazo para entrega 24 à 48 horas. " );
 
         CharSequence[] itens = new CharSequence[]{
-         "Manhã", "Tarde" //aqui!!!
+         "Manhã", "Tarde"
 
         };
         builder.setSingleChoiceItems(itens, 1, new DialogInterface.OnClickListener() {
@@ -359,7 +361,7 @@ public class ProdutosActivity2 extends AppCompatActivity {
                 pedidoRecuperado.setObservacao(obervacao);
                 pedidoRecuperado.setStatus("Confirmado");
                 pedidoRecuperado.confirmar();
-                pedidoRecuperado.remover();
+               pedidoRecuperado.remover();
                 pedidoRecuperado = null;
 
             }

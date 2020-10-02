@@ -40,7 +40,7 @@ public class AdminActivity extends AppCompatActivity {
     private DatabaseReference firebaseRef;
     private String idUsuarioLogado;
 
-    //TELA  DE PRODUTOS CADASTRADOS
+    //TELA  DE MEUS PRODUTOS
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class AdminActivity extends AppCompatActivity {
 
         //configuração tollbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Produtos Cadastrados");
+        toolbar.setTitle("Meus Produtos");
         setSupportActionBar(toolbar);
 
         //configura RecycleView

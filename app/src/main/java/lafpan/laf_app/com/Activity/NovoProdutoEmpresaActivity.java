@@ -57,6 +57,8 @@ public class NovoProdutoEmpresaActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_novo_produto_empresa);
 
+            //TELA CADASTRO DE PRODUTOS
+
 
             //configurações iniciais
             inicializarComponentes();

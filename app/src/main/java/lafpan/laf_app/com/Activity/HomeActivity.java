@@ -45,13 +45,15 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //LINHA DE PRODUTOS
+
         inicializarComponentes();
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         firebaseRef = ConfiguracaoFirebase.getFirebase();
 
         //configuração tollbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("LAFPAN-PEDIDOS");
+        toolbar.setTitle("Linha de Produtos");
         setSupportActionBar(toolbar);
 
         //configura RecycleView

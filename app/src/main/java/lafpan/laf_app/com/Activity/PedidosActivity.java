@@ -3,6 +3,8 @@ package lafpan.laf_app.com.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,9 +24,11 @@ import java.util.List;
 import Adapter.AdapterPedido;
 import Helper.ConfiguracaoFirebase;
 import Helper.UsuarioFirebase;
+import Listener.RecyclerItemClickListener;
 import dmax.dialog.SpotsDialog;
 import lafpan.laf_app.com.splashactivity.R;
 import model.Pedido;
+
 
 public class PedidosActivity extends AppCompatActivity {
 
@@ -41,6 +45,9 @@ public class PedidosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedidos);
+
+
+
 
         // configurações
 
@@ -63,6 +70,39 @@ public class PedidosActivity extends AppCompatActivity {
         recyclerPedidos.setAdapter(adapterPedido);
 
         recuperarPedidos();
+
+        //Adiciona evento de clique ao recicle view
+
+        recyclerPedidos.addOnItemTouchListener(
+
+                new RecyclerItemClickListener(
+
+                        this, recyclerPedidos,
+
+                        new RecyclerItemClickListener.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(View view, int position) {
+
+                            }
+
+                            @Override
+                            public void onLongItemClick(View view, int position) {
+
+                                Pedido pedido = pedidos.get(position);
+
+                                pedido.setStatus("Finalizado");
+
+                                pedido.atualizarStatus();
+
+                            }
+
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                            }
+                        }
+                )
+        );
 
     }
 
